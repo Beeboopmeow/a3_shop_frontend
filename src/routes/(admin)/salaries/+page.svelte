@@ -3,8 +3,10 @@
 	import TableData from '$lib/components/lists/TableData.svelte';
 	import TableHead from '$lib/components/lists/TableHead.svelte';
 	import TableLayout from '$lib/components/lists/TableLayout.svelte';
+	import Button from '$lib/components/shared/Button.svelte';
 	import Title from '$lib/components/shared/Title.svelte';
 	import getData from '$lib/getData';
+	import deleteData from '$lib/deleteData';
 	import type { Employee } from '$lib/types';
 	import { onMount } from 'svelte';
 
@@ -35,6 +37,7 @@
 					<TableHead>CPF</TableHead>
 					<TableHead>Nome</TableHead>
 					<TableHead>Salário</TableHead>
+					<TableHead><span></span></TableHead>
 				</tr>
 			</thead>
 			<tbody>
@@ -43,6 +46,15 @@
 						<TableData>{employee.cpf}</TableData>
 						<TableData>{employee.name}</TableData>
 						<TableData>R${employee.salary}</TableData>
+						<TableData>
+							<Button
+								classes="bg-red-400 hover:bg-red-500 hover:text-white"
+								onclick={() => {
+									deleteData(`employees/${employee.cpf}`);
+									employees = employees.filter((e) => e.cpf !== employee.cpf);
+								}}>Apagar</Button
+							>
+						</TableData>
 					</tr>
 				{/each}
 			</tbody>

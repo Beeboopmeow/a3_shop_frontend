@@ -1,5 +1,9 @@
 <script lang="ts">
-	let { children } = $props();
+	interface Props {
+		children?: any;
+	}
+
+	let { children }: Props = $props();
 </script>
 
 <th scope="col" class="px-6 py-4">
