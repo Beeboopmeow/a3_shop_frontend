@@ -4,7 +4,8 @@
 </script>
 
 <svelte:head>
-	<title>Tutti-Fruti</title>
+	<title>Tutti-Frutti</title>
+	<link rel="icon" href="/favicon.ico" />
 </svelte:head>
 
 {@render children()}

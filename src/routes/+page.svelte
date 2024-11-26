@@ -36,7 +36,7 @@
 </script>
 
 <nav class="waves flex w-full items-center py-20">
-	<Title classes="ml-16 text-center w-1/3">Mercado Tutti-Fruti</Title>
+	<Title classes="ml-16 text-center w-1/3">Mercado Tutti-Frutti</Title>
 	<div class="w-2/3"></div>
 	<ul class="flex w-1/4 items-center justify-end">
 		<Button
