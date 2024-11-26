@@ -30,7 +30,7 @@
 	<Title classes="text-center">Salários</Title>
 	<TableLayout dataSource={employees}>
 		<table class="min-w-full rounded text-center text-sm font-light text-white">
-			<thead class="bg-blue-400 font-semibold">
+			<thead class="bg-orange-300 font-semibold">
 				<tr>
 					<TableHead>CPF</TableHead>
 					<TableHead>Nome</TableHead>
@@ -39,7 +39,7 @@
 			</thead>
 			<tbody>
 				{#each employees.slice(page * 10, (page + 1) * 10) as employee (employee.cpf)}
-					<tr class="border-b border-blue-200 bg-blue-100 text-neutral-800">
+					<tr class="border-b border-orange-50 bg-orange-100 text-neutral-800">
 						<TableData>{employee.cpf}</TableData>
 						<TableData>{employee.name}</TableData>
 						<TableData>R${employee.salary}</TableData>

@@ -49,7 +49,7 @@
 		<!-- Título -->
 		<div class="mb-10 flex justify-center">
 			<Title
-				classes="bg-gradient-to-r from-blue-600 to-indigo-400 bg-clip-text inline-block text-transparent"
+				classes="bg-gradient-to-r from-pastelvermelho to-yellow-300 bg-clip-text inline-block text-transparent"
 			>
 				Login</Title
 			>
@@ -81,7 +81,7 @@
 			<div class="mt-6 flex justify-center">
 				<Button
 					type="submit"
-					classes="items-center bg-blue-400 hover:bg-indigo-400 rounded-md transition text-white w-40 p-3"
+					classes="items-center bg-gradient-to-r from-pastelvermelho to-yellow-300 hover:text-white rounded-md transition w-40 p-3"
 					onclick={() => {
 						if (permission === false) {
 						}

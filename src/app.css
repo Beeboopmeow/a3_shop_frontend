@@ -10,14 +10,12 @@
 }
 
 :root {
-	--cor-fundo-body: #ececea;
+	--cor-fundo-body: #fffce9;
 }
 
 body {
 	font-family: 'Nunito', sans-serif;
 	color: var(--cor-texto-principal);
-
-	background-image: url(/images/pngtree-rustic-elegance-marbled-textured-background-with-brown-fluid-art-paint-png-image_12316314.png);
 	background-color: var(--cor-fundo-body);
 	background-size: 100%;
 }

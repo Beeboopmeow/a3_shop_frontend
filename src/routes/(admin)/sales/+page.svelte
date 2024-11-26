@@ -30,7 +30,7 @@
 	<Title classes="text-center">Vendas</Title>
 	<TableLayout dataSource={sales}>
 		<table class="min-w-full rounded text-center text-sm font-light text-white">
-			<thead class="bg-blue-400 font-semibold">
+			<thead class="bg-orange-300 font-semibold">
 				<tr>
 					<TableHead>#</TableHead>
 					<TableHead>Quantidade</TableHead>
@@ -40,7 +40,7 @@
 			</thead>
 			<tbody>
 				{#each sales.slice(page * 10, (page + 1) * 10) as sale (sale.id)}
-					<tr class="border-b border-blue-200 bg-blue-100 text-neutral-800">
+					<tr class="border-b border-orange-50 bg-orange-100 text-neutral-800">
 						<TableData>{sale.id}</TableData>
 						<TableData>{sale.orderAmount}</TableData>
 						<TableData>{sale.createdAt}</TableData>

@@ -8,12 +8,12 @@
 		{ name: 'Produtos', href: '/products' }
 	];
 
-	const buttonClasses = 'text-gray-200 hover:underline';
+	const buttonClasses = 'hover:underline';
 
 	let { children } = $props();
 </script>
 
-<nav class="m-4 flex rounded-full bg-rose-700 p-2">
+<nav class="waves flex py-8">
 	<ul class="flex w-1/3 justify-around">
 		{#each tabs as tab}
 			<li>
@@ -28,3 +28,13 @@
 </nav>
 
 {@render children()}
+
+<style>
+	.waves {
+		background-image: url('/images/waves.png');
+		max-width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 35% 100%;
+	}
+</style>

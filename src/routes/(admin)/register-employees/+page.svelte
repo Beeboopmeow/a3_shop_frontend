@@ -70,7 +70,7 @@
 
 	<div class="mt-14">
 		<Button
-			classes={`bg-blue-200 transition ${!isFilled() ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-500 hover:text-white'}`}
+			classes={`bg-pastelvermelho transition ${!isFilled() ? 'opacity-50 cursor-not-allowed' : 'hover:bg-laranja hover:text-white'}`}
 			disabled={!isFilled()}
 			onclick={() => {
 				postData('employees', {
